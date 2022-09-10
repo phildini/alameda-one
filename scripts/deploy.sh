@@ -9,8 +9,5 @@ datasette publish fly \
   --install=datasette-render-markdown \
   --install=datasette-template-sql \
   --install=python-dateutil \
-  --install=datasette-graphql \
   --install=datasette-json-html \
-  --install=html5lib \
-  --install=beautifulsoup4 \
   --app="alameda-one"

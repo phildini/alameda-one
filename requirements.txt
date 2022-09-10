@@ -17,6 +17,4 @@ datasette-template-sql
 python-dateutil
 datasette-json-html
 datasette-debug-asgi
-html5lib
-beautifulsoup4
 datasette-publish-fly
