@@ -1,13 +1,15 @@
+
+
 {% extends "page_base.html" %}
 
 {% set pages = sql("""
 select
-    title, html
+    title, html, publish_date
 from
-    uses
+    news
 where
-    uses._path = :path
-""", {"path": "for/{}.md".format(slug)}, database="content") %}
+    news._path = :path
+""", {"path": "news/{}.md".format(slug)}, database="content") %}
 {% if not pages %}
     {{ raise_404("Page not found") }}
 {% endif %}
@@ -24,15 +26,9 @@ main img {
 {% block title %}{{ page.title }}{% endblock %}
 
 {% block content %}
+<p class="breadcrumbs"><a href="/news">News</a> &gt;  {{ page.title }}, {{page.publish_date}}</p>
 <h1>{{ page.title }}</h1>
 
 {{ page.html|safe }}
-
-<h3>More uses for Datasette</h3>
-<ul>
-{% for row in sql("select _path, title from uses order by [order]", database="content") %}
-    <li><a href="/{{ row._path.replace(".md", "") }}">{{ row.title }}</a></li>
-{% endfor %}
-</ul>
 
 {% endblock %}

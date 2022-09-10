@@ -3,27 +3,35 @@ body {
     line-height: 1.4;
     padding-bottom: 2em;
 }
-header, main, footer {
+
+header,
+main,
+footer {
     max-width: 1024px;
     margin: 0 auto;
 }
+
 header {
     border-bottom: 4px solid #0e0c82;
     margin-bottom: 2em;
 }
+
 footer {
     border-top: 2px solid #0e0c82;
     padding-top: 0.5em;
 }
+
 .tagline {
     font-size: 1.4em;
     color: #0e0c82;
     text-shadow: 1px 1px 3px rgba(14, 12, 130, 0.3);
 }
+
 .datasette-logo {
     width: 100%;
-    max-width: 400px;
+    max-width: 200px;
 }
+
 a:link,
 a:visited,
 a:hover,
@@ -41,6 +49,7 @@ header nav ul {
     margin: 1em 0 0 0;
     padding: 0;
 }
+
 header nav li {
     float: left;
     font-size: 0.9em;
@@ -48,25 +57,31 @@ header nav li {
     margin: 0;
     padding: 0 2em 0 0;
 }
+
 header nav li:last-child {
     padding-right: 0;
 }
+
 nav {
     overflow: hidden;
     margin-bottom: 2em;
 }
+
 nav .show-on-narrow {
     display: none;
 }
+
 body.page main .content {
     max-width: 800px;
 }
+
 .datasette-logo-small {
     height: 1.5em;
     display: inline-block;
     padding-right: 2em;
     vertical-align: middle;
 }
+
 body.page nav ul,
 body.page nav li {
     float: none;
@@ -74,9 +89,11 @@ body.page nav li {
     position: relative;
     top: 1px;
 }
+
 body.page nav {
     margin-bottom: 1em;
 }
+
 body.page header {
     padding-top: 0.5em;
 }
@@ -85,12 +102,15 @@ body.page header {
     nav .hide-on-narrow {
         display: none;
     }
+
     nav .show-on-narrow {
         display: inline;
     }
+
     header nav li {
         padding-right: 1em;
     }
+
     body.page nav ul {
         display: block;
     }
@@ -99,13 +119,15 @@ body.page header {
 .about {
     width: 50%;
 }
+
 .datasette-video {
     float: right;
     width: 45%;
     margin-left: 5%;
-    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.35);
     padding-bottom: 0.3em;
 }
+
 .datasette-video p {
     margin: 0.3em 0.3em 0.3em 0;
     text-align: center;
@@ -118,9 +140,11 @@ body.page header {
         display: block;
         margin: 1em auto;
     }
+
     .about {
         width: 100%;
     }
+
     body .two-col-wrapper {
         display: block;
     }
@@ -129,10 +153,12 @@ body.page header {
 .use-cases {
     clear: both;
 }
+
 .card svg {
     max-width: 50px;
     color: #0e0c82;
 }
+
 .card {
     width: 33.3%;
     box-sizing: border-box;
@@ -141,9 +167,11 @@ body.page header {
     float: left;
     text-align: center;
 }
+
 .card h2 {
     font-size: 1.1em;
 }
+
 .card p {
     text-align: left;
     font-size: 0.8em;
@@ -157,13 +185,15 @@ span.by {
 .substack iframe {
     float: right;
     border: 1px solid #EEE;
-    background:white;
+    background: white;
     margin-right: -224px;
 }
+
 @media (max-width: 1024px) {
     .substack {
         text-align: center;
     }
+
     .substack iframe {
         float: none;
         max-width: 100%;
@@ -182,32 +212,43 @@ span.by {
 .two-col-wrapper {
     display: flex;
 }
+
 .two-col-column {
     flex: 1;
 }
+
 .two-col-column:first-of-type {
     padding-right: 1em;
 }
 
-.github-corner:hover .octo-arm{
-    animation:octocat-wave 560ms ease-in-out
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
 }
+
 @keyframes octocat-wave {
-    0%,100% {
-        transform:rotate(0)
+
+    0%,
+    100% {
+        transform: rotate(0)
     }
-    20%,60% {
-        transform:rotate(-25deg)
+
+    20%,
+    60% {
+        transform: rotate(-25deg)
     }
-    40%,80% {
-        transform:rotate(10deg)
+
+    40%,
+    80% {
+        transform: rotate(10deg)
     }
 }
+
 @media (max-width:500px) {
     .github-corner:hover .octo-arm {
         animation: none
     }
-    .github-corner .octo-arm{
+
+    .github-corner .octo-arm {
         animation: octocat-wave 560ms ease-in-out
     }
 }
@@ -215,12 +256,14 @@ span.by {
 .beta-search {
     margin-bottom: 1em;
 }
+
 .beta-search input {
     border: 1px solid #ccc;
     border-radius: 3px;
     padding: 9px 4px;
     margin-right: 1em;
 }
+
 .beta-search input[type="submit"] {
     color: #fff;
     background-color: #8484f4;
