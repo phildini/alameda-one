@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euf -o pipefail
 
-datasette publish fly 
+datasette publish fly \
   content.db \
   --plugins-dir=plugins \
   --template-dir=templates \
